@@ -22,16 +22,17 @@ async function main(port) {
         console.error("Error en la conexion a la base:", error);
       });
 
+     
     console.log("usuario y clave", configVariables.port);
     console.log("NODE_ENV: ", process.env.NODE_ENV);
     if (process.env.NODE_ENV !== "production") {
       try {
         const options = {
           key: fs.readFileSync(
-            "../cliente/src/assets/Certificados/STAR_espoch_edu_ec.key"
+            "./src/assets/Certificados/STAR_espoch_edu_ec.key"
           ),
           cert: fs.readFileSync(
-            "../cliente/src/assets/Certificados/STAR_espoch_edu_ec.crt"
+            "./src/assets/Certificados/STAR_espoch_edu_ec.crt"
           ),
         };
         let server = https.createServer(options, app).listen(port, "0.0.0.0");
