@@ -5,12 +5,9 @@
   "main": "ServiciosInventarios.js",
   "type": "module",
   "scripts": {
-  
     "dev": "nodemon src/ServiciosInventarios.js",
     "start": "node src/ServiciosInventarios.js",
-    "build": "babel src -d lib",
-    "prod": "git pull origin main && npm i --prod && sudo pm2 stop src/ServiciosInventarios.js && sudo pm2 start src/ServiciosInventarios.js --name ServiciosInventarios && sudo pm2 save",
-    "prodinit": "git pull origin main && npm i --prod && sudo pm2 start src/ServiciosInventarios.js --name ServiciosInventarios && sudo pm2 save"
+    "build": "babel src -d lib"
   },
   "keywords": [],
   "author": "",
@@ -45,6 +42,10 @@
     "xml2js": "^0.5.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
     "nodemon": "^2.0.20"
   }
 }

@@ -11,7 +11,7 @@ import fs from "fs";
 async function main(port) {
   try {
 
-    await sequelize.sync({ force: true, logging: false });
+    await sequelize.sync({  logging: false });
 
     sequelize
       .authenticate()
