@@ -1,0 +1,28 @@
+.box-rep{
+    border: 0.5px solid;
+    height: 150px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.reporte{
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-excel{
+    /*float: right;*/
+    float: right;
+    text-align: right;
+    margin-top: 0px;
+}
+
+.container-btn-excel{
+    display: grid;
+    float: right;
+    place-content: center;
+    margin: 10px 0px 10px 0px;
+  }
+
