@@ -9,7 +9,13 @@ export const sequelize = new Sequelize(
     host: dbVariables.dbServer,
     logging:false,
     dialect: dbVariables.dbDialect,
-    port: dbVariables.dbPort
+    port: dbVariables.dbPort,
+    ssl: true, // Habilita SSL
+      dialectOptions: {
+          ssl: {
+              require: true // Utiliza sslmode=require
+          }
+      }
   }
 );
 
