@@ -35,14 +35,14 @@ async function main(port) {
             "./src/assets/Certificados/STAR_espoch_edu_ec.crt"
           ),
         };
-        let server = https.createServer(options, app).listen(port, "0.0.0.0");
+        https.createServer(options, app).listen(port, "0.0.0.0");
         console.log("si ingresa")
       } catch (error) {
         console.error("Is not a DEV enviroment: ", error);
       }
     } else {
       console.log("\n\n>> PRODUCTION\n\n");
-      let server = app.listen(port, () => {
+      app.listen(port, () => {
         console.log("Servicios Inventarios levantado exitosamente: ", port)
 
       });
