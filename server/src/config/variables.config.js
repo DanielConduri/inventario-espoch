@@ -2,7 +2,7 @@ import * as dotenv from 'dotenv'
 dotenv.config()
 
 export const configVariables = {
-    port: process.env.SERVER_PORT,
+    port: process.env.SERVER_PORT || 8001,
     demonPort: process.env.SERVER_DEMON_PORT,
     //urlServicioCentralizado:"https://servicioscomprobante.espoch.edu.ec/ServicioWebComprobantes/ServiciosComprobantes/ObtenerCebtralizadaCedula/",
     urlServicioCentralizado: "https://centralizada2.espoch.edu.ec/rutadinardap/buscarRegistros/",
