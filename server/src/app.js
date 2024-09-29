@@ -24,7 +24,8 @@ const whiteList = [
   "https://pruebasw.espoch.edu.ec:3011/login",
   "https://pruebas1.espoch.edu.ec ",
   "https://inventarios.espoch.edu.ec",
-  "https://inventario-espoch.vercel.app"
+  "https://inventario-espoch.vercel.app",
+  "https://inventario-espoch-v2.vercel.app/"
 ];
 
 app.use(
